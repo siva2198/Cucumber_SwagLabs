@@ -8,9 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/com/swaglabs/Features",
         glue = {"com.swaglabs.StepDefinition", "com.swaglabs.BaseConfig"},
-        plugin = {"pretty", "html:target/cucumber-html-report.html", "json:cucumber.json"}
+        plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 )
-
+//"pretty", "html:target/cucumber-html-report.html","json:cucumber.json",
 public class TestRunner {
-
 }
